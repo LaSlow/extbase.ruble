@@ -1,0 +1,5 @@
+de:
+  bundle_name: "ExtBase"
+  #
+  #
+  restIncludeFile: "extBaseViewAssign | $this->view->assign('name', $variable);"
