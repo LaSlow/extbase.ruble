@@ -56,8 +56,178 @@ children:
   customProperties:
     prefix_values: [extBaseViewAssign]
   description: null
-  displayName: ExtBase view assign | $this->view->assign('name', $variable);
-  expansion: \$this->view->assign('${1:name}', \$${2:variable});$0
+  displayName: $this->view->assign('name', $variable)
+  expansion: \$this->view->assign('${name}', \$${2:variable});$0
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: ExtBase
+  customProperties:
+    prefix_values: ['DebuggerUtility::var_dump']
+  description: null
+  displayName: DebuggerUtility::var_dump($variable)
+  expansion: \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump(${1:variable});$0
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: ExtBase
+  customProperties:
+    prefix_values: ['LocalizationUtility::translate']
+  description: null
+  displayName: LocalizationUtility::translate('key', ':ext_key')
+  expansion: \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('${1:key}', '${2:ext_key}');$0
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: PHP
+  customProperties:
+    prefix_values: [error_reporting]
+  description: null
+  displayName: error_reporting(E_ALL) & ini_set('display_errors', 1)
+  expansion: 'error_reporting(E_ALL);
+
+    ini_set(''display_errors'', 1);
+
+    $0'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: PHP
+  customProperties:
+    prefix_values: [getter_setter_property]
+  description: null
+  displayName: getterSetterProperty
+  expansion: "/**\n * ${1:varname}\n *\n * @var ${2:string}\n */\nprotected \\$${1:varname};\n\
+    \n/**\n * Returns the ${1:varname}\n *\n * @return ${2:string} \\$${1:varname}\n\
+    \ */\npublic function get${3:methodname}() {\n    return \\$this->${1:varname};\n\
+    }\n\n/**\n * Sets the ${1:varname}\n *\n * @param ${2:string} \\$${1:varname}\n\
+    \ * @return void\n */\npublic function set${3:methodname}(\\$${1:varname}) {\n\
+    \    \\$this->${1:varname} = \\$${1:varname};\n}\n$0"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: PHP
+  customProperties:
+    prefix_values: [getter_setter]
+  description: null
+  displayName: getterSetter
+  expansion: "/**\n * Returns the ${1:varname}\n *\n * @return ${2:string} \\$${1:varname}\n\
+    \ */\npublic function get${3:methodname}() {\n    return \\$this->${1:varname};\n\
+    }\n\n/**\n * Sets the ${1:varname}\n *\n * @param ${2:string} \\$${1:varname}\n\
+    \ * @return void\n */\npublic function set${3:methodname}(\\$${1:varname}) {\n\
+    \    \\$this->${1:varname} = \\$${1:varname};\n}\n$0"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: PHP
+  customProperties:
+    prefix_values: [getter]
+  description: null
+  displayName: getter
+  expansion: "/**\n * Returns the ${1:varname}\n *\n * @return ${2:string} \\$${1:varname}\n\
+    \ */\npublic function get${3:methodname}() {\n    return \\$this->${1:varname};\n\
+    }\n$0"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: PHP
+  customProperties:
+    prefix_values: [setter]
+  description: null
+  displayName: setter
+  expansion: "/**\n * Sets the ${1:varname}\n *\n * @param ${2:string} \\$${1:varname}\n\
+    \ * @return void\n */\npublic function set${3:methodname}(\\$${1:varname}) {\n\
+    \    \\$this->${1:varname} = \\$${1:varname};\n}\n$0"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: PHP
+  customProperties:
+    prefix_values: [property]
+  description: null
+  displayName: property
+  expansion: "/**\n * ${1:varname}\n *\n * @var ${2:string}\n */\nprotected \\$${1:varname};\n\
+    $0"
   iconPath: null
   input: [none]
   inputPath: null

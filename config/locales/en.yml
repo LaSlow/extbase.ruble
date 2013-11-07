@@ -2,4 +2,26 @@ en:
   bundle_name: "ExtBase"
   #
   #
-  restIncludeFile: "extBaseViewAssign | $this->view->assign('name', $variable);"
+  # ExtBase view assign
+  extBaseViewAssign: "$this->view->assign('name', $variable)"
+  #
+  #
+  # ExtBase Object-Param Repository
+  extBaseObjectParamRepository: "Object-Param define - Type Repository"
+  #
+  #
+  # ExtBase debug
+  extBaseDebug: "DebuggerUtility::var_dump($variable)"
+  #
+  #
+  # ExtBase translate
+  extBaseTranslate: "LocalizationUtility::translate('key', ':ext_key')"
+  #
+  #
+  # ExtBase GeneralUtility
+  extBaseGeneralUtilityUnderscoredToUpperCamelCase:     "GeneralUtility::underscoredToUpperCamelCase($variable)"
+  extBaseGeneralUtilityCamelCaseToLowerCaseUnderscored: "GeneralUtility::camelCaseToLowerCaseUnderscored($variable)"
+  #
+  #
+  # Other
+  otherErrorReporting: "error_reporting(E_ALL) & ini_set('display_errors', 1)"
